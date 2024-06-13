@@ -1,5 +1,5 @@
 :root{
-    --bg-color1: #212529;
+    --bg-color1: #212528;
     --bg-color2: #2a2b2d;
 }
 *{
@@ -17,7 +17,7 @@ body{
 .header{
     position: sticky;
     top: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color1);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -27,8 +27,29 @@ body{
         background-color: var(--bg-color2);
         border: none;
         padding: 12px;
-        font-size: 16px;
+        font-size: 15px;
         border-radius: 25px;
         color: #fff;
+        &:focus{
+            outline-color:rgb(0, 4, 255);
+        }
+    }
+    & #searchBtn{
+        border:none;
+        font-size:16px;
+        padding:12px;
+        border-radius:25px;
+        background-color:#fff;
+        cursor:pointer;
+
+    }
+    & #location{
+        border:none;
+        font-size:16px;
+        padding:12px;
+        border-radius:25px;
+        background-color:#ea6e4b;
+        cursor:pointer;
+        
     }
 }
