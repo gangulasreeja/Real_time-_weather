@@ -14,3 +14,21 @@ body{
     font-family: sans-serif;
     padding: 0 15px;
 }
+.header{
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    & #city_input{
+        background-color: var(--bg-color2);
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 25px;
+        color: #fff;
+    }
+}
