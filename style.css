@@ -58,6 +58,7 @@ body{
     padding:15px;
     border-radius: 15px;
     border-bottom: 15px;
+    margin-bottom: 15px;
     & p{
         font-size:14px;
         color:#999;
@@ -89,6 +90,16 @@ body{
             margin-top: 10px;
             margin-bottom: 12px;
 
+        }
+        & .forecast-item{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            place-items: center;
+            margin-bottom:15px;
+            & .icon-wrapper{
+                display:flex;
+                align-items: center;
+            }
         }
     }
 
