@@ -65,6 +65,7 @@ body{
     border-radius: 15px;
     border-bottom: 15px;
     margin-bottom: 15px;
+
     & p{
         font-size:14px;
         color:#999;
@@ -128,7 +129,7 @@ body{
             margin-bottom: 10px;
             & .air-index{
                 color:#000;
-                padding : 5%;
+                padding : 2%;
                 border-radius: 15px;
                 &.aqi-1{
                     background-color: var(--aqi-1);
@@ -158,13 +159,15 @@ body{
         }
         & .sunrise-sunset{
             display:grid;
+            margin-top: 1.5rem;
             grid-template-columns:repeat(2,1fr);
             & .item{
                 display: flex;
-                align-items: centre;
+                align-items: center;
+                justify-content: space-evenly;
                 gap: 10px;
                 & h2{
-                    margin-top:15 px;
+                    margin-top:10 px;
                 }
             }
         }
@@ -172,6 +175,10 @@ body{
             display: flex;
             justify-content: space-between;   
         }
+       
+
+
+    
     }
 }
 }
