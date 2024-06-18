@@ -108,6 +108,7 @@ body{
             }
         }
     }
+
 & .weather-right{
     grid-column:span 3;
     & h2{
@@ -172,4 +173,5 @@ body{
             justify-content: space-between;   
         }
     }
+}
 }
