@@ -1,6 +1,6 @@
 :root{
-    --bg-color1: #024950;
-    --bg-color2:rgb(164, 148, 247,0.5);
+    --bg-color1: #9760F2;
+    --bg-color2:rgb(166,150,248);
     --aqi-1: #d4e157;
     --aqi-2: #ffee58;
     --aqi-3: #ffca28;
@@ -13,7 +13,6 @@
     padding: 15px;
     border-radius: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White box shadow */
 }
 
 *{
@@ -25,21 +24,26 @@ body{
     min-height: 100vh;
     background-color: var(--bg-color1);
     color:black;
-    font-family: sans-serif;
-    padding: 0 15px;
 
-        background-image: url('heylo.jpg'); /* Replace with your image path */
-        background-size: cover; /* Ensure the background covers the entire viewport */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
-        background-position: center; /* Center the image */
-        background-attachment: fixed; /* Make the background fixed relative to the viewport */
-    
+    padding: 0 15px;
+    /* font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style:normal;
+       
 }
+
+
+
+
 hr{
     margin-bottom:10px;
 }
 .header{
-    position: sticky;
+    
     top: 0;
     display:flex;
     justify-content: space-between;
@@ -52,9 +56,9 @@ hr{
         padding: 12px;
         font-size: 15px;
         border-radius: 25px;
-        color:#712fe7;
+        color:#110427;
         &:focus{
-            outline-color:rgb(0, 4, 255);
+            outline-color:rgb(8, 44, 86);
         }
     }
     & #searchBtn{
@@ -62,7 +66,7 @@ hr{
         font-size:16px;
         padding:12px;
         border-radius:25px;
-        background-color:#fff;
+        background-color:#c3d4f5;
         cursor:pointer;
 
     }
@@ -71,7 +75,7 @@ hr{
         font-size:16px;
         padding:12px;
         border-radius:25px;
-        background-color:#ea6e4b;
+        background-color:#7232e9;
         cursor:pointer;
         
     }
@@ -82,12 +86,14 @@ hr{
     border-radius: 15px;
     border-bottom: 15px;
     margin-bottom: 15px;
+    box-shadow: 1.5px 1.5px 3px white;
+    background: linear-gradient(to bottom,rgb(166,150,248) 0%,white 150%);
     
 
     & p{
         font-size:16px;
         font-weight:bold;
-        color:#712fe7;
+        color:#110427;
     }
     & h2{
         font-size:32px;
@@ -108,7 +114,7 @@ hr{
                 margin: 7px 0;
             }
             & p{
-                color:black;
+                color:#110427;
             }
         }
         & .card-footer p{
