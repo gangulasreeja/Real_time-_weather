@@ -1,6 +1,6 @@
 :root{
-    --bg-color1: #212528;
-    --bg-color2: #2a2b2d;
+    --bg-color1: #024950;
+    --bg-color2:rgb(164, 148, 247,0.5);
     --aqi-1: #d4e157;
     --aqi-2: #ffee58;
     --aqi-3: #ffca28;
@@ -8,6 +8,14 @@
     --aqi-5: #ef5350;
     
 }
+.weather data {
+    background-color: var(--bg-color2);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White box shadow */
+}
+
 *{
     margin:0;
     padding:0;
@@ -16,9 +24,16 @@
 body{
     min-height: 100vh;
     background-color: var(--bg-color1);
-    color:#fff;
+    color:black;
     font-family: sans-serif;
     padding: 0 15px;
+
+        background-image: url('heylo.jpg'); /* Replace with your image path */
+        background-size: cover; /* Ensure the background covers the entire viewport */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center; /* Center the image */
+        background-attachment: fixed; /* Make the background fixed relative to the viewport */
+    
 }
 hr{
     margin-bottom:10px;
@@ -26,7 +41,6 @@ hr{
 .header{
     position: sticky;
     top: 0;
-    background-color: var(--bg-color1);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +52,7 @@ hr{
         padding: 12px;
         font-size: 15px;
         border-radius: 25px;
-        color: #fff;
+        color:#712fe7;
         &:focus{
             outline-color:rgb(0, 4, 255);
         }
@@ -68,10 +82,12 @@ hr{
     border-radius: 15px;
     border-bottom: 15px;
     margin-bottom: 15px;
+    
 
     & p{
-        font-size:14px;
-        color:#999;
+        font-size:16px;
+        font-weight:bold;
+        color:#712fe7;
     }
     & h2{
         font-size:32px;
@@ -92,7 +108,7 @@ hr{
                 margin: 7px 0;
             }
             & p{
-                color:#fff;
+                color:black;
             }
         }
         & .card-footer p{
