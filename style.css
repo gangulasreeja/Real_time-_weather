@@ -8,6 +8,131 @@
     --aqi-5: #ef5350;
     
 }
+
+.center {
+    position: absolute;
+    top: 6%; /* Adjusted top position */
+    left: 15%; /* Adjusted left position */
+    transform: translate(0, 0); /* No translation */
+    width: 100px; /* Adjusted width */
+}
+
+.cloud {
+    position: relative;
+    width: 100px; /* Adjusted width */
+    height: 33px; /* Adjusted height */
+    border-radius: 17px; /* Adjusted border-radius */
+    background: #fff;
+    background:#4408b5;
+    animation: move 1000ms linear;
+}
+
+.cloud:before {
+    content: '';
+    position: absolute;
+    top: -17px; /* Adjusted positioning */
+    left: 17px; /* Adjusted positioning */
+    background: #fff;
+    width: 33px; /* Adjusted width */
+    height: 33px; /* Adjusted height */
+    border-radius: 50%;
+    background:#4408b5;
+}
+
+.cloud:after {
+    content: '';
+    position: absolute;
+    top: -25px; /* Adjusted positioning */
+    left: 33px; /* Adjusted positioning */
+    background: #fff;
+    width: 50px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    border-radius: 50%;
+    background:#4408b5;
+}
+
+.sun {
+    position: absolute;
+    top: -33px; /* Adjusted positioning */
+    margin: 0;
+    padding: 0;
+    width: 33px; /* Adjusted width */
+    height: 33px; /* Adjusted height */
+    background: #ffe208;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.sun li {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 46px; /* Adjusted width */
+    height: 2px; /* Adjusted height */
+    background: #ffe208;
+    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+}
+
+.sun li:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.sun li:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.sun li:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.sun li:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.sun li:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(22.5deg);
+}
+
+.sun li:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(-22.5deg);
+}
+
+.sun li:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(67.5deg);
+}
+
+.sun li:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(-67.5deg);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(17px); /* Adjusted movement */
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
 .weather data {
     background-color: var(--bg-color2);
     padding: 15px;
