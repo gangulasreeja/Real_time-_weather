@@ -7,11 +7,19 @@
     --aqi-4: #e67e22; /* Dark Orange */
     --aqi-5: #e74c3c; /* Red */
 }
+.header {
+    h2 {
+        font-family: "Bangers", system-ui;
+        font-weight: 400;
+        font-style:normal;
+        font-size:400%;
+        }
+}
 
 .center {
     position: absolute;
     top: 6%; /* Adjusted top position */
-    left: 14%; /* Adjusted left position */
+    left: 21%; /* Adjusted left position */
     transform: translate(0, 0); /* No translation */
     width: 100px; /* Adjusted width */
 }
@@ -186,7 +194,8 @@ hr{
         font-size:16px;
         padding:12px;
         border-radius:25px;
-        background-color:#2980b9;
+    background: #fd9b09; /* Yellow */
+
         cursor:pointer;
     }
 }
@@ -196,7 +205,7 @@ hr{
     border-radius: 15px;
     border-bottom: 15px;
     margin-bottom: 15px;
-    box-shadow: 1.5px 1.5px 3px white;
+    box-shadow: 3px 3px 3px white;
     background: linear-gradient(to bottom, rgb(133,193,233) 0%, white 150%);
     
     & p{
@@ -320,11 +329,11 @@ hr{
 }
 @media(max-width: 1400px){
     .center{
-        left:20%;
+        left:29%;
     }}
-@media(max-width: 1100px){
+@media(max-width: 1088px){
     .center{
-        left:20%;
+        left:29%;
     }
 
     .weather-data{
@@ -362,9 +371,9 @@ hr{
     }
 
 }
-@media(max-width: 1000px){
+@media(max-width: 1084px){
     .center{
-        left:25%;
+        left:35%;
     }}
 
 @media(max-width: 992px){
@@ -398,7 +407,7 @@ hr{
     }
 }
 }
-@media(max-width: 820px){
+@media(max-width: 950px){
     .center{
       display:none;  
     }}
@@ -406,6 +415,7 @@ hr{
     .center{
         display:block;
         left:5%;
+        top:8%;
        & .cloud{
         opacity: 0.5;
        }
