@@ -147,6 +147,7 @@ function getWeatherDetails(name, lat, lon, country, state){
         });
 
         // Filter unique forecast days
+        // vamhsi doing this
         let uniqueForecastDays = [];
         let fiveDaysForecast = data.list.filter((forecast, index) => {
             let forecastDate = new Date(forecast.dt_txt).getDate();
