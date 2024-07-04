@@ -115,7 +115,7 @@ function getWeatherDetails(name, lat, lon, country, state){
             </div>
         </div>
     </div>`;
-
+//vamshi again here
         humidityVal.innerHTML = `${humidity}%`;
         pressureVal.innerHTML = `${pressure} hPa`;
         visibilityVal.innerHTML = `${(visibility / 1000).toFixed(1)} km`;
