@@ -19,7 +19,7 @@ function getWeatherDetails(name, lat, lon, country, state){
     AIR_POLLUTION_API_URL=`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api_key}`;
     days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-
+//vamshi again here
     fetch(AIR_POLLUTION_API_URL).then(res => res.json()).then(data => {
         let {co, no, no2, o3, so2, pm2_5, pm10, nh3} = data.list[0].components;
         aqiCard.innerHTML = `
